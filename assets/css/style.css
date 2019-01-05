@@ -2,26 +2,30 @@ body {
     background-image: url("../images/starwars-bg.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
+    font-family: 'K2D', sans-serif;
+
 }
 img {
     width: 150px;
-    height: 150px;
+    height: 100px;
     object-fit: cover;
     border-style: solid;
     border-width: 15px;
     border-color: white;
+    outline-style: solid;
+    outline-color: blue;
 }
-h1 {
+#gameTitle {
     color: white;
     font-size: 50px;
     text-align: right;
     padding-right: 40px;
 }
+
 .imageTop {
     position: relative;
     text-align: center;
-     /* left: 50px; */
-    bottom: 182px;
+    bottom: 132px;
     font-size: 12px;
 }
 .imageBottom {
@@ -30,6 +34,11 @@ h1 {
     bottom: 29px;
     font-size: 12px;
 }
-.container {
+.imageContainer {
     display: inline-block;
+}
+p {
+    font-size: 30px;
+    color: white;
+    padding-left: 40px;
 }
