@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
 
 </head>
 
@@ -19,7 +21,7 @@
     <!-- ==================================================== -->
     <!-- Images -->
     <!-- ==================================================== -->
-    <div class="characterSet">
+    <div id="characterSet">
         <div class="imageContainer" id="luke">
             <img src="assets/images/luke.jpg" alt="Luke Skywalker">
             <div class="imageTop">Luke Skywalker</div>
@@ -28,22 +30,50 @@
         <div class="imageContainer" id="rey">
             <img src="assets/images/rey.jpg" alt="Rey">
             <div class="imageTop">Rey</div>
-            <div class="imageBottom" id="reyHP">120</div>
+            <div class="imageBottom" id="reyHP">100</div>
         </div>
         <div class="imageContainer" id="kylo">
             <img src="assets/images/kylo.jpg" alt="Kylo Ren">
             <div class="imageTop">Kylo Ren</div>
-            <div class="imageBottom" id="kyloHP">120</div>
+            <div class="imageBottom" id="kyloHP">180</div>
         </div>
+        <div class="imageContainer" id="phasma">
+            <img src="assets/images/phasma.jpg" alt="Phasma">
+            <div class="imageTop">Phasma</div>
+            <div class="imageBottom" id="phasmaHP">150</div>
+        </div>
+    </div>
+    <div id="userCharacter">
+        <p>
+            Your Character
+        </p>
         <div class="imageContainer" id="phasma">
             <img src="assets/images/phasma.jpg" alt="Phasma">
             <div class="imageTop">Phasma</div>
             <div class="imageBottom" id="phasmaHP">120</div>
         </div>
+    </div>
+    <div id="enemies">
         <p>
-            Your Character
+            Enemies available to attack
         </p>
     </div>
+    <div id="attackButton">
+        <button>
+            Attack
+        </button>
+    </div>
+    <div id="defender">
+        <p>
+            Denfender
+        </p>
+        <div class="imageContainer" id="luke">
+            <img src="assets/images/luke.jpg" alt="Luke Skywalker">
+            <div class="imageTop">Luke Skywalker</div>
+            <div class="imageBottom" id="lukeHP">120</div>
+        </div>
+    </div>
+
 
 
 
