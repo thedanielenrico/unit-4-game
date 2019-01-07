@@ -22,8 +22,7 @@ img {
     padding-top: 15px;
     padding-right: 40px;
 }
-.characterSet {
-    height: 100px;
+#characterSet {
     padding-left: 10px;
 }
 
@@ -46,6 +45,9 @@ p {
     font-size: 25px;
     color: white;
     padding: 10px 40px;
+}
+#enemies {
+    padding-left: 10px;
 }
 #userCharacter {
     padding-left: 10px;
