@@ -17,10 +17,62 @@
 
 <body>
     <div class="container">
+        <div class="header">
+            Crystals Collector!
+        </div>
+        <div class="row">
+            <div class="bg-info col-sm-8 m-3">
+                <p class="p">
+                    You will be given a random number at the start of the game.
+                </p>
+                <p class="p">
+                    There are four crystals below. By clicking on a crystal you will add a specific amount of points to
+                    your total score.
+                </p>
+                <p class="p">
+                    You win the game by matching your total score to the random number, you lose if your total score
+                    goes above the random number.
+                </p>
+                <p class="p">
+                    The value of each crystal is hidden from you until you click on it.
+                </p>
+                <p class="p">
+                    Each time when the game starts, the game will change the value of each crystal.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <p>
+                   Random number: <span id="randomNum"></span>
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <p>
+                    wins: <span id="wins"></span>
+                </p>
+                <p>
+                    losses: <span id="losses"></span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <img src="assets/images/crystal1.jpg" alt="crystal" id="crystal1">
+            <img src="assets/images/crystal2.jpg" alt="crystal" id="crystal2">
+            <img src="assets/images/crystal3.jpg" alt="crystal" id="crystal3">
+            <img src="assets/images/crystal4.jpg" alt="crystal" id="crystal4">
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <p>
+                    Your total score is: <span id="scoreTotal"></span>
+                </p>
+            </div>
+        </div>
 
 
 
-        
+
     </div>
     <script src="assets/javascript/game.js"></script>
 </body>

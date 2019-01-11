@@ -2,3 +2,12 @@ body {
     background-image: url('../images/background.jpg');
     background-size: 100%;
 }
+.header {
+    font-size: 32px;
+}
+img {
+    width: 80px;
+}
+div {
+    margin: 10px;
+}
