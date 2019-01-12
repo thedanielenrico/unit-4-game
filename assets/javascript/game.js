@@ -31,6 +31,7 @@ function gameInit() {
     crystalNum3 = Math.floor(Math.random() * (+crystalMax - +crystalMin) + +crystalMin);
     crystalNum4 = Math.floor(Math.random() * (+crystalMax - +crystalMin) + +crystalMin);
     crystal1.push(crystalNum1);
+    console.log(crystal1);
     crystal2.push(crystalNum2);
     crystal3.push(crystalNum3);
     crystal4.push(crystalNum4);
@@ -40,35 +41,35 @@ document.body.onload = gameInit();
 // Game functions
 // ======================================================
 $("#crystal1").on("click", function () {
-    score += parseInt(crystal1) + totalScore;
+    score += parseInt(crystal1[crystal1.length-1]) + totalScore;
     $("#scoreTotal").text(score);
     checkIfWon();
 })
 $("#crystal2").on("click", function () {
-    score += parseInt(crystal2) + totalScore;
+    score += parseInt(crystal2[crystal12.length-1]) + totalScore;
     $("#scoreTotal").text(score);
     checkIfWon();
 })
 $("#crystal3").on("click", function () {
-    score += parseInt(crystal3) + totalScore;
+    score += parseInt(crystal3[crystal3.length-1]) + totalScore;
     $("#scoreTotal").text(score);
     checkIfWon();
 })
 $("#crystal4").on("click", function () {
-    score += parseInt(crystal4) + totalScore;
+    score += parseInt(crystal4[crystal4.length-1]) + totalScore;
     $("#scoreTotal").text(score);
     checkIfWon();
 })
 
 function checkIfWon() {
     if (score === randNum) {
-        alert("you won")
         wins++;
         $("#wins").text(wins);
+        $("#msg").text("You won!")
         gameInit();
     } else if (score > randNum) {
-        alert("you lost!")
         losses++;
+        $("#msg").text("You lost!")
         $("#losses").text(losses);
         gameInit();
     }
