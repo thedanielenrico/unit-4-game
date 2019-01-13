@@ -31,7 +31,6 @@ function gameInit() {
     crystalNum3 = Math.floor(Math.random() * (+crystalMax - +crystalMin) + +crystalMin);
     crystalNum4 = Math.floor(Math.random() * (+crystalMax - +crystalMin) + +crystalMin);
     crystal1.push(crystalNum1);
-    console.log(crystal1);
     crystal2.push(crystalNum2);
     crystal3.push(crystalNum3);
     crystal4.push(crystalNum4);
