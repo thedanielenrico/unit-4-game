@@ -45,7 +45,7 @@ $("#crystal1").on("click", function () {
     checkIfWon();
 })
 $("#crystal2").on("click", function () {
-    score += parseInt(crystal2[crystal12.length-1]) + totalScore;
+    score += parseInt(crystal2[crystal2.length-1]) + totalScore;
     $("#scoreTotal").text(score);
     checkIfWon();
 })
